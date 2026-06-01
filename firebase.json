@@ -1,0 +1,45 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "flutter-shop-7c37d",
+          "appId": "1:752835526888:android:66dba13bc97a958f72495d",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "flutter-shop-7c37d",
+          "configurations": {
+            "android": "1:752835526888:android:66dba13bc97a958f72495d",
+            "ios": "1:752835526888:ios:0adf6faeaa73101672495d",
+            "macos": "1:752835526888:ios:0adf6faeaa73101672495d",
+            "web": "1:752835526888:web:7b07b4096de12d5872495d",
+            "windows": "1:752835526888:web:454c7f609112d47f72495d"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
